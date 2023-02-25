@@ -7,6 +7,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 
-#base "../resource/ui/alternatives/ClassModel_Smart.res"		// (Smart) ONLY SHOW CLASSMODEL WHEN DISGUISED
-//#base "../resource/ui/alternatives/ClassModel_Off.res"		// (OFF) NEVER SHOW CLASSMODEL
+//#base "../resource/ui/alternatives/ClassModel_Smart.res"		// (Smart) ONLY SHOW CLASSMODEL WHEN DISGUISED
+#base "../resource/ui/alternatives/ClassModel_Off.res"		// (OFF) NEVER SHOW CLASSMODEL
 //#base "../resource/ui/alternatives/ClassModel_On.res"			// (ON) ALWAYS SHOW CLASSMODEL

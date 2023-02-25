@@ -5,7 +5,7 @@
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
-		"ypos"			"r85"
+		"ypos"			"r55"
 	}
 	
 	"BonkLine"

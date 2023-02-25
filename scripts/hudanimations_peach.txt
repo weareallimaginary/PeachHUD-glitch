@@ -2,15 +2,56 @@
 
 event HudHealthBonusPulse
 {
-	Animate	PlayerStatusHealthBonusImage 		Alpha		"235"								Linear	0.0 	0.0
+	Animate	PlayerStatusHealthBonusImage 		Alpha		"0"								Linear	0.0 	0.0
 	
-	Animate PlayerStatusHealthValue				FgColor 	"Health Buff" 						Accel 	0.0		0.0
+	//Animate PlayerStatusHealthValue				FgColor 	"Health Buff" 						Accel 	0.0		0.0
 	
 	Animate PlayerStatusHealthValueTarget		FgColor 	"Health Buff Target" 				Accel 	0.0		0.0
 	
 	Animate PlayerStatusHealthValueSpectator	FgColor 	"Health Buff Spec" 					Accel 	0.0		0.0
+	Animate PlayerStatusHealthValue 			zpos 	"-5" 							Linear 	0.0 	0.0
+
+	Animate PlayerStatusHealthValueShadow 						FgColor 	"100 200 100 255" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3			 			FgColor 	"100 200 100 255" 							Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow3						xpos 		"2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow3			 			ypos 		"2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"100 200 100 255" 							Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow3 						xpos 		"-1" 									Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow3 						ypos 		"1" 									Linear 	0.1		0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"100 200 100 255" 							Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow3 						ypos 		"-1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow3 						xpos 		"1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"100 200 100 255" 							Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow3 						ypos 		"-1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow3 						xpos 		"-1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"100 200 100 255" 							Linear 	0.25 	0.0
+
+	Animate	PlayerStatusHealthValue	    						FgColor		"180 255 180 150"	Linear 0.0 0.075
+	Animate	PlayerStatusHealthValue 	    						FgColor		"80 255 80 200"	Linear 0.125 0.075
+	Animate PlayerStatusHealthValue 								xpos		"-1"									Linear 	0.05	0.0
+	Animate PlayerStatusHealthValue 								ypos		"-1"									Linear 	0.05	0.0
+	Animate PlayerStatusHealthValue 								xpos		"2"										Linear 	0.1		0.0
+	Animate PlayerStatusHealthValue 								ypos		"-2"									Linear 	0.1		0.0
+	Animate PlayerStatusHealthValue 								xpos		"1"										Linear 	0.15	0.0
+	Animate PlayerStatusHealthValue								ypos		"0"										Linear 	0.15	0.0
+	Animate PlayerStatusHealthValue 								xpos		"-2"									Linear 	0.2		0.0
+	Animate PlayerStatusHealthValue 								ypos		"2"										Linear 	0.2		0.0		
+/////////////2ndshadow
+	Animate PlayerStatusHealthValueShadow2			 			FgColor 	"255 255 102 255" 							Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow2						xpos 		"-2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow2			 			ypos 		"-2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"150 150 102 255" 							Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow2 						xpos 		"1" 									Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow2 						ypos 		"-1" 									Linear 	0.1		0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"255 255 102 255" 							Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow2 						ypos 		"1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow2 						xpos 		"-1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"150 150 102 255" 							Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow2 						ypos 		"1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow2 						xpos 		"1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"255 255 102 255" 							Linear 	0.25 	0.0
 	
-	RunEvent HudHealthBonusPulseLoop			0.7
+	RunEvent HudHealthBonusPulseLoop			0.25
 }
 
 event HudHealthBonusPulseLoop
@@ -24,6 +65,17 @@ event HudHealthBonusPulseStop
 	StopEvent HudHealthBonusPulseLoop			0.0
 	
 	Animate PlayerStatusHealthValue 			FgColor 	"Health" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow 			FgColor 	"0 0 0 0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3 			FgColor 	"0 0 0 0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow2 			FgColor 	"0 0 0 0" 							Linear 	0.0 	0.0
+
+	Animate PlayerStatusHealthValue 			xpos 	"0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValue 			ypos 	"0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow2 			ypos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow2 			xpos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3 			ypos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3 			xpos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValue 			zpos 	"5" 							Linear 	0.0 	0.0
 	
 	Animate PlayerStatusHealthValueTarget 		FgColor 	"Health" 							Linear 	0.0 	0.0
 	
@@ -34,20 +86,80 @@ event HudHealthBonusPulseStop
 
 event HudHealthDyingPulse
 {
-	Animate	PlayerStatusHealthBonusImage 		Alpha		"235"								Linear 	0.0 	0.0
+	Animate	PlayerStatusHealthBonusImage 		Alpha		"0"								Linear	0.0 	0.0
 	
-	Animate PlayerStatusHealthValue				FgColor 	"Health Hurt" 						Linear 	0.0		0.0
+	//Animate PlayerStatusHealthValue				FgColor 	"Health Hurt" 						Accel 	0.0		0.0
 	
-	Animate PlayerStatusHealthValueTarget		FgColor 	"Health Hurt Target" 				Linear 	0.0		0.0
+	Animate PlayerStatusHealthValueTarget		FgColor 	"Health Hurt Target" 				Accel 	0.0		0.0
 	
-	Animate PlayerStatusHealthValueSpectator	FgColor 	"Health Hurt Spec" 					Linear 	0.0		0.0
+	Animate PlayerStatusHealthValueSpectator	FgColor 	"Health Hurt Spec" 					Accel 	0.0		0.0
+	Animate PlayerStatusHealthValue 			zpos 	"-5" 							Linear 	0.0 	0.0
+
+	Animate PlayerStatusHealthValueShadow 			FgColor 	"255 255 255 70" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3			 			FgColor 	"255 0 0 255" 							Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow3						xpos 		"2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow3			 			ypos 		"2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"255 0 0 255" 							Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow3 						xpos 		"-1" 									Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow3 						ypos 		"1" 									Linear 	0.1		0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"255 0 0 255" 							Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow3 						ypos 		"-1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow3 						xpos 		"1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"255 0 0 255" 							Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow3 						ypos 		"-1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow3 						xpos 		"-1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow3 						FgColor 	"255 0 0 255" 							Linear 	0.25 	0.0
+
+	Animate	PlayerStatusHealthValue	    						FgColor		"100 100 140 150"	Linear 0.0 0.075
+	Animate	PlayerStatusHealthValue 	    						FgColor		"100 100 200 200"	Linear 0.125 0.075
+	Animate PlayerStatusHealthValue 								xpos		"-1"									Linear 	0.05	0.0
+	Animate PlayerStatusHealthValue 								ypos		"-1"									Linear 	0.05	0.0
+	Animate PlayerStatusHealthValue 								xpos		"2"										Linear 	0.1		0.0
+	Animate PlayerStatusHealthValue 								ypos		"-2"									Linear 	0.1		0.0
+	Animate PlayerStatusHealthValue 								xpos		"1"										Linear 	0.15	0.0
+	Animate PlayerStatusHealthValue								ypos		"0"										Linear 	0.15	0.0
+	Animate PlayerStatusHealthValue 								xpos		"-2"									Linear 	0.2		0.0
+	Animate PlayerStatusHealthValue 								ypos		"2"										Linear 	0.2		0.0		
+/////////////2ndshadow
+	Animate PlayerStatusHealthValueShadow2			 			FgColor 	"0 0 255 255" 							Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow2						xpos 		"-2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow2			 			ypos 		"-2" 									Linear 	0.05 	0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"0 0 255 255" 							Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow2 						xpos 		"1" 									Linear 	0.1 	0.0
+	Animate PlayerStatusHealthValueShadow2 						ypos 		"-1" 									Linear 	0.1		0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"0 0 255 255" 							Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow2 						ypos 		"1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow2 						xpos 		"-1" 									Linear 	0.15 	0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"0 0 255 255" 							Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow2 						ypos 		"1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow2 						xpos 		"1" 									Linear 	0.2 	0.0
+	Animate PlayerStatusHealthValueShadow2 						FgColor 	"0 0 255 255" 							Linear 	0.25 	0.0
+
+	RunEvent HudHealthDyingPulseLoop				0.25
+}
+
+event HudHealthDyingPulseLoop
+{
+	RunEvent HudHealthDyingPulse				0.0
 }
 
 event HudHealthDyingPulseStop
 {
-	StopEvent HudHealthDyingPulse				0.0
+	StopEvent HudHealthDyingPulse 				0.0
+	StopEvent HudHealthDyingPulse			0.0
 	
 	Animate PlayerStatusHealthValue 			FgColor 	"Health" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow 			FgColor 	"0 0 0 0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3 			FgColor 	"0 0 0 0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow2 			FgColor 	"0 0 0 0" 							Linear 	0.0 	0.0
+
+	Animate PlayerStatusHealthValue 			xpos 	"0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValue 			ypos 	"0" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow2 			ypos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow2 			xpos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3 			ypos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValueShadow3 			xpos 	"-1" 							Linear 	0.0 	0.0
+	Animate PlayerStatusHealthValue 			zpos 	"5" 							Linear 	0.0 	0.0
 	
 	Animate PlayerStatusHealthValueTarget 		FgColor 	"Health" 							Linear 	0.0 	0.0
 	
@@ -56,25 +168,145 @@ event HudHealthDyingPulseStop
 
 //====================================================================================================================
 
+//===========================================================================================================================
+
 event HudLowAmmoPulse
 {
-	Animate AmmoInClip 							FgColor 	"Ammo In Clip Low" 					Linear 	0.0 	0.0
 	
-	Animate AmmoInReserve						FgColor 	"Ammo In Reserve Low" 				Linear 	0.0 	0.0
+
+	Animate AmmoInClipShadow			 			FgColor 	"255 0 0 255" 							Linear 	0.05 	0.0
+	Animate AmmoInClipShadow						xpos 		"2" 									Linear 	0.05 	0.0
+	Animate AmmoInClipShadow			 			ypos 		"2" 									Linear 	0.05 	0.0
+	Animate AmmoInClipShadow 						FgColor 	"255 0 0 255" 							Linear 	0.1 	0.0
+	Animate AmmoInClipShadow 						xpos 		"-2" 									Linear 	0.1 	0.0
+	Animate AmmoInClipShadow 						ypos 		"2" 									Linear 	0.1		0.0
+	Animate AmmoInClipShadow 						FgColor 	"0 0 255 255" 							Linear 	0.15 	0.0
+	Animate AmmoInClipShadow 						ypos 		"-2" 									Linear 	0.15 	0.0
+	Animate AmmoInClipShadow 						xpos 		"2" 									Linear 	0.15 	0.0
+	Animate AmmoInClipShadow 						FgColor 	"255 0 0 255" 							Linear 	0.2 	0.0
+	Animate AmmoInClipShadow 						ypos 		"-2" 									Linear 	0.2 	0.0
+	Animate AmmoInClipShadow 						xpos 		"-2" 									Linear 	0.2 	0.0
+	Animate AmmoInClipShadow 						FgColor 	"0 0 255 255" 							Linear 	0.25 	0.0
+	Animate AmmoNoClipShadow 						zpos 		"2" 									Linear 	0.2 	0.0
+
+
+
+	Animate	AmmoInClip	    						FgColor		"100 100 140 150"	Linear 0.0 0.075
+	Animate	AmmoInClip 	    						FgColor		"150 100 200 150"	Linear 0.125 0.075
+	Animate AmmoInClip 								xpos		"-1"									Linear 	0.05	0.0
+	Animate AmmoInClip 								ypos		"-1"									Linear 	0.05	0.0
+	Animate AmmoInClip 								xpos		"2"										Linear 	0.1		0.0
+	Animate AmmoInClip 								ypos		"-2"									Linear 	0.1		0.0
+	Animate AmmoInClip 								xpos		"1"										Linear 	0.15	0.0
+	Animate AmmoInClip								ypos		"0"										Linear 	0.15	0.0
+	Animate AmmoInClip 								xpos		"-2"									Linear 	0.2		0.0
+	Animate AmmoInClip 								ypos		"2"										Linear 	0.2		0.0		
+	Animate AmmoInClip 								zpos		"-2"										Linear 	0.2		0.0		
 	
-	Animate AmmoNoClip 							FgColor 	"Ammo No Clip Low" 					Linear 	0.0 	0.0
+
+	Animate AmmoInReserveShadow			 			FgColor 	"255 0 0 255" 							Linear 	0.05 	0.0
+	Animate AmmoInReserveShadow						xpos 		"2" 									Linear 	0.05 	0.0
+	Animate AmmoInReserveShadow			 			ypos 		"2" 									Linear 	0.05 	0.0
+	Animate AmmoInReserveShadow 					FgColor 	"0 0 255 255" 							Linear 	0.1 	0.0
+	Animate AmmoInReserveShadow 					xpos 		"-1" 									Linear 	0.1 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"1" 									Linear 	0.1		0.0
+	Animate AmmoInReserveShadow 					FgColor 	"255 0 0 255" 							Linear 	0.15 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"-1" 									Linear 	0.15 	0.0
+	Animate AmmoInReserveShadow 					xpos 		"1" 									Linear 	0.15 	0.0
+	Animate AmmoInReserveShadow 					FgColor 	"0 0 255 255" 							Linear 	0.2 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"-1" 									Linear 	0.2 	0.0
+	Animate AmmoInReserveShadow 					xpos 		"-2" 									Linear 	0.2 	0.0
+	Animate AmmoInReserveShadow 					FgColor 	"255 0 0 255" 							Linear 	0.25 	0.0
+	Animate AmmoNoClipShadow 						zpos 		"2" 									Linear 	0.2 	0.0
+
+
+	Animate	AmmoInReserve	    						FgColor		"100 100 140 150"	Linear 0.0 0.075
+	Animate	AmmoInReserve 	    						FgColor		"150 100 200 150"	Linear 0.125 0.075
+	Animate AmmoInReserve 							xpos		"19"									Linear 	0.05	0.0
+	Animate AmmoInReserve 							ypos		"-1"									Linear 	0.05	0.0
+	Animate AmmoInReserve 							xpos		"22"										Linear 	0.1		0.0
+	Animate AmmoInReserve 							ypos		"-2"									Linear 	0.1		0.0
+	Animate AmmoInReserve 							xpos		"21"										Linear 	0.15	0.0
+	Animate AmmoInReserve							ypos		"0"										Linear 	0.15	0.0
+	Animate AmmoInReserve 							xpos		"18"									Linear 	0.2		0.0
+	Animate AmmoInReserve 							ypos		"2"										Linear 	0.2		0.0	
+
+
+	Animate AmmoNoClipShadow			 			FgColor 	"255 0 0 255" 							Linear 	0.05 	0.0
+	Animate AmmoNoClipShadow						xpos 		"2" 									Linear 	0.05 	0.0
+	Animate AmmoNoClipShadow			 			ypos 		"2" 									Linear 	0.05 	0.0
+	Animate AmmoNoClipShadow 						FgColor 	"0 0 255 255" 							Linear 	0.1 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"-1" 									Linear 	0.1 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"1" 									Linear 	0.1		0.0
+	Animate AmmoNoClipShadow 						FgColor 	"255 0 0 255" 							Linear 	0.15 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"-1" 									Linear 	0.15 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"1" 									Linear 	0.15 	0.0
+	Animate AmmoNoClipShadow 						FgColor 	"0 0 255 255" 							Linear 	0.2 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"-1" 									Linear 	0.2 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"-1" 									Linear 	0.2 	0.0
+	Animate AmmoNoClipShadow 						FgColor 	"255 0 0 255" 							Linear 	0.25 	0.0
+	Animate AmmoNoClipShadow 						zpos 		"2" 									Linear 	0.2 	0.0
+
+
+
+	Animate	AmmoNoClip	    						FgColor		"100 100 140 150"	Linear 0.0 0.075
+	Animate	AmmoNoClip 	    						FgColor		"150 100 200 150"	Linear 0.125 0.075
+	Animate AmmoNoClip 								xpos		"-1"									Linear 	0.05	0.0
+	Animate AmmoNoClip 								ypos		"-1"									Linear 	0.05	0.0
+	Animate AmmoNoClip 								xpos		"2"										Linear 	0.1		0.0
+	Animate AmmoNoClip 								ypos		"-2"									Linear 	0.1		0.0
+	Animate AmmoNoClip 								xpos		"1"										Linear 	0.15	0.0
+	Animate AmmoNoClip								ypos		"0"										Linear 	0.15	0.0
+	Animate AmmoNoClip 								xpos		"-2"									Linear 	0.2		0.0
+	Animate AmmoNoClip 								ypos		"2"										Linear 	0.2		0.0	
+	Animate AmmoNoClip 								zpos 	"-2" 							Linear 	0.25 	0.0
+
+
+
+	RunEvent HudLowAmmoPulseLoop					0.25
 }	
+
+event HudLowAmmoPulseLoop
+{
+	RunEvent HudLowAmmoPulse						0.0
+}
 
 event HudLowAmmoPulseStop
 {
-	StopEvent HudLowAmmoPulse 					0.0
+	StopEvent HudLowAmmoPulse 						0.0
+	StopEvent HudLowAmmoPulseLoop 					0.0
 	
-	Animate AmmoInClip 							FgColor 	"Ammo In Clip" 						Linear 	0.0 	0.0
+	//reset colors
 	
-	Animate AmmoInReserve 						FgColor 	"Ammo In Reserve" 					Linear 	0.0 	0.0
+	Animate AmmoInClipShadow 						FgColor 	"Shadows" 							Linear 	0.0 0.0
+
+	Animate AmmoInClip 								FgColor 	"Ammo In Clip" 						Linear 	0.0 0.0
+	Animate AmmoInReserve 							FgColor 	"Ammo In Reserve" 					Linear 	0.0 0.0
+	Animate AmmoNoClip 								FgColor 	"Ammo No Clip" 						Linear 	0.0 0.0
 	
-	Animate AmmoNoClip 							FgColor 	"Ammo No Clip" 						Linear 	0.0 	0.0
+	Animate AmmoInClipShadow 								FgColor 	"0 0 0 0" 						Linear 	0.0 0.0
+	Animate AmmoInReserveShadow 							FgColor 	"0 0 0 0" 					Linear 	0.0 0.0
+	Animate AmmoNoClipShadow 								FgColor 	"0 0 0 0" 						Linear 	0.0 0.0
+
+	//reset positions
+	Animate AmmoInClipShadow 						zpos 	"-2" 							Linear 	0.25 	0.0
+	Animate AmmoInClipShadow  						ypos		"0"								Accel	0.0		0.0	
+	Animate AmmoInClipShadow  						xpos		"0"								Aceel 	0.0		0.0	
+	Animate AmmoInReserveShadow 					xpos 		"0" 								Accel 	0.0 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"0" 								Accel 	0.0 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"0" 								Accel 	0.0 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"0" 								Accel 	0.0 	0.0
+
+	Animate AmmoInClip	  							ypos		"0"									Accel	0.0		0.0	
+	Animate AmmoInClip								xpos		"0"									Aceel 	0.0		0.0	
+	Animate AmmoInReserve	 						xpos 		"20" 								Accel 	0.0 	0.0
+	Animate AmmoInReserve							ypos 		"0" 								Accel 	0.0 	0.0
+	Animate AmmoNoClip		 						xpos 		"0" 								Accel 	0.0 	0.0
+	Animate AmmoNoClip		 						ypos 		"0" 								Accel 	0.0 	0.0
+	Animate AmmoNoClip 						zpos 	"5" 							Linear 	0.25 	0.0
 }
+
+//===========================================================================================================================
 
 //====================================================================================================================
 

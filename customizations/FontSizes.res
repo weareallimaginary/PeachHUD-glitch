@@ -23,18 +23,30 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"40"		//DEFAULT=40
 				"additive"  	"0"
 				"antialias"		"1"
 			}
 		}
-		
+		"Health Regular Test"
+		{
+			"1"
+			{
+				"name"			"renko Bold"
+				"tall"			"40"		//DEFAULT=40
+				"antialias"	"1"
+				"additive"  "0"
+				"scanlines"		"2"
+				"blur"			"3"
+			}
+		}
+
 		"Health Minmode"
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"50"		//DEFAULT=50
 				"additive"  	"0"
 				"antialias"		"1"
@@ -49,7 +61,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"40"		//DEFAULT=40
 				"additive"  	"0"
 				"antialias"		"1"
@@ -60,7 +72,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"50"		//DEFAULT=50
 				"additive"  	"0"
 				"antialias"		"1"
@@ -71,7 +83,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"20"		//DEFAULT=20
 				"additive"  	"0"
 				"antialias"		"1"
@@ -82,7 +94,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"24"		//DEFAULT=24
 				"additive"  	"0"
 				"antialias"		"1"
@@ -93,7 +105,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"40"		//DEFAULT=40
 				"additive"  	"0"
 				"antialias"		"1"
@@ -105,7 +117,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"50"		//DEFAULT=50
 				"additive"  	"0"
 				"antialias"		"1"
@@ -121,7 +133,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"22"		//DEFAULT=22
 				"additive"  	"0"
 				"antialias"		"1"
@@ -134,7 +146,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Renogare Soft"
+				"name"			"renko Bold"
 				"tall"			"22"		//DEFAULT=22
 				"additive"  	"0"
 				"antialias"		"1"

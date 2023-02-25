@@ -12,7 +12,7 @@
 		//	  	"visible" "1" = Enabled  "visible" "0" = Disabled		//
 		//////////////////////////////////////////////////////////////////
 		
-		"visible"	"0"																																																																			"controlName" "CExLabel" "fieldName" "CustomCrosshair" "enabled" "1" "zpos" "2" "textAlignment" "center"
+		"visible"	"1"																																																																			"controlName" "CExLabel" "fieldName" "CustomCrosshair" "enabled" "1" "zpos" "2" "textAlignment" "center"
 		
 		//////////////////////////////////////////////////////////////////
 		//					  	   CROSSHAIR TYPE						//
@@ -23,7 +23,7 @@
 		// 		the different options and their attached letter			//
 		//////////////////////////////////////////////////////////////////
 		
-		"labelText"	"?"
+		"labelText"	"9"
 		
 		//////////////////////////////////////////////////////////////////
 		//				 	CROSSHAIR SIZE & PROPERTIES					//
